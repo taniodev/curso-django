@@ -11,7 +11,7 @@
             <h1 class="mt-4 mb-3">Lista de vídeos aperitivo</h1>
             <ol>
                 {% for video in videos %}
-                <li>{{ video.titulo | default:"Sem título" }}</li>
+                <li><a href="{{ video.get_absolute_url }}">{{ video.titulo | default:"Sem título" }}</a></li>
                 {% empty %}
                 <li>Nenhum vídeo encontrado</li>
                 {% endfor %}
