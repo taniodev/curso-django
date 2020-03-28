@@ -4,3 +4,7 @@
 [![codecov](https://codecov.io/gh/taniodev/curso-django/branch/master/graph/badge.svg)](https://codecov.io/gh/taniodev/curso-django)
 
 Projeto Django desenvolvido no curso [Python Pro](https://www.python.pro.br)
+
+> Em desenvolvimento
+
+Esta aplicação está disponível em <https://cursodedjango.herokuapp.com/>.
