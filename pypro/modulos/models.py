@@ -13,4 +13,4 @@ class Modulo(OrderedModel):
         pass
 
     def get_absolute_url(self):
-        return reverse('modulos:detalhe', kwargs={'slug': self.slug})
+        return reverse('modulos:detalhes', kwargs={'slug': self.slug})
