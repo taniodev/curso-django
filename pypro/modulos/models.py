@@ -29,7 +29,7 @@ class Aula(OrderedModel):
         pass
 
     def __str__(self):
-        return  self.titulo
+        return self.titulo
 
     def get_absolute_url(self):
         return reverse('modulos:aula', kwargs={'slug': self.slug})
