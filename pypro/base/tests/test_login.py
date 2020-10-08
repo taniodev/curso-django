@@ -70,3 +70,7 @@ def test_nome_usuario_logado_presente(resp_home_com_usuario_logado, usuario_loga
 
 def test_botao_sair_presente(resp_home_com_usuario_logado):
     assert_contains(resp_home_com_usuario_logado, 'Sair')
+
+
+def test_link_de_logout_presente(resp_home_com_usuario_logado):
+    assert_contains(resp_home_com_usuario_logado, reverse('logout'))
