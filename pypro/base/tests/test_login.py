@@ -62,3 +62,11 @@ def test_botao_entrar_ausente(resp_home_com_usuario_logado):
 
 def test_link_de_login_ausente(resp_home_com_usuario_logado):
     assert_not_contains(resp_home_com_usuario_logado, reverse('login'))
+
+
+def test_nome_usuario_logado_presente(resp_home_com_usuario_logado, usuario_logado):
+    assert_contains(resp_home_com_usuario_logado, usuario_logado.first_name)
+
+
+def test_botao_sair_presente(resp_home_com_usuario_logado):
+    assert_contains(resp_home_com_usuario_logado, 'Sair')
